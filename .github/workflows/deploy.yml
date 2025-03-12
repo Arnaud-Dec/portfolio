@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -25,14 +27,9 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "github-actions"
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages 
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          branch: gh-pages
