@@ -21,10 +21,10 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: 'export', // Permet de générer un export statique
-  // N'appliquer basePath qu'en production
+  output: 'export', // Génère un export statique
   basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  trailingSlash: true, // Ajoute un slash à la fin des URLs pour éviter les erreurs 404
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+  trailingSlash: true, // Ajoute un slash à la fin des URLs
 };
 
 mergeConfig(nextConfig, userConfig);
