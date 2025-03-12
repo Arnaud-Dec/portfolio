@@ -27,9 +27,15 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Create .nojekyll file
+        run: touch out/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
-          token: ${{ secrets.DEPLOY_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
+          clean: true
+          clean-exclude: |
+            .nojekyll

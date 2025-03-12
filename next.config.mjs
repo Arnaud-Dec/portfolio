@@ -1,10 +1,3 @@
-let userConfig = undefined;
-try {
-  userConfig = await import('./v0-user-next.config');
-} catch (e) {
-  // ignore error
-}
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -27,7 +20,13 @@ const nextConfig = {
   trailingSlash: true, // Ajoute un slash à la fin des URLs
 };
 
-mergeConfig(nextConfig, userConfig);
+let userConfig = undefined;
+try {
+  userConfig = await import('./v0-user-next.config');
+  mergeConfig(nextConfig, userConfig);
+} catch (e) {
+  // ignore error
+}
 
 function mergeConfig(nextConfig, userConfig) {
   if (!userConfig) {
