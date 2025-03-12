@@ -11,6 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Portfolio R&D - Développeur Full Stack",
   description: "Portfolio de développeur full stack R&D spécialisé en mobile, IA et IoT",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,3 +26,6 @@ export default function RootLayout({
   )
 }
 
+
+
+import './globals.css'
