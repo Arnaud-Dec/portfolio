@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # ou la version que tu utilises
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
@@ -24,6 +24,11 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
