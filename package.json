@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out -r https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/Arnaud-Dec/portfolio.git"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
