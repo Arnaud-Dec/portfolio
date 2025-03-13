@@ -67,7 +67,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Je conçois et développe des solutions innovantes à l'intersection du mobile, de l'IA et de l'IoT.
+              Je conçois et développe des solutions innovantes à l'intersection du mobile, de l'IA et de l'IoT et parfois des truc pas ouf.
             </p>
             <div className="flex flex-wrap justify-center gap-2 mt-6">
               {technologies.slice(0, 8).map((tech, index) => (
