@@ -1,24 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true, // Important pour GitHub Pages
-  },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
+  images: { unoptimized: true },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: 'export', // Génère un export statique
+  output: 'export', // Pour générer un export statique
   basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
-  trailingSlash: true, // Ajoute un slash à la fin des URLs
+  trailingSlash: true,
 };
+
 
 let userConfig = undefined;
 try {
