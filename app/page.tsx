@@ -14,15 +14,15 @@ export default function Home() {
     "Flutter",
     "Python",
     "JavaScript",
-    "TypeScript",
-    "React",
-    "Node.js",
+    "Spring Boot",
+    "Java",
+    "Docker",
     "LLMs",
     "IoT",
     "ESP32",
     "C++",
-    "Docker",
-    "AWS",
+    "Node.js",
+    "TypeScript",
     "Firebase",
   ]
 
@@ -67,7 +67,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Je conçois et développe des solutions innovantes à l'intersection du mobile, de l'IA et de l'IoT et parfois des truc pas ouf.
+            Alternant en développement R&D chez CirilGroup et étudiant au BUT Lyon 1, je suis un touche-à-tout tech qui aime explorer différents domaines sans me cantonner à une seule spécialité. Du mobile à l'IoT en passant par l'IA, je m'amuse à créer des projets variés qui répondent à des problématiques concrètes. Ma curiosité me pousse constamment à apprendre de nouvelles technologies et à les combiner de façon créative.
             </p>
             <div className="flex flex-wrap justify-center gap-2 mt-6">
               {technologies.slice(0, 8).map((tech, index) => (
@@ -75,13 +75,17 @@ export default function Home() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <Link href="#projets">
               <Button size="lg" className="bg-white text-black hover:bg-gray-200">
                 Voir mes projets
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
+            </Link>
+            <Link href="#contact">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 Me contacter
               </Button>
+            </Link>
             </div>
           </div>
         </section>
@@ -219,46 +223,45 @@ export default function Home() {
               Intéressé par une collaboration? N'hésitez pas à me contacter.
             </p>
           </div>
-
           <div className="max-w-md mx-auto grid gap-8">
-            <div className="flex items-center gap-4 p-4 border border-white/20 rounded-lg hover:bg-white/5 transition-colors backdrop-blur-sm">
+            <a href="mailto:arnaud.decourt.pro@gmail.com" className="flex items-center gap-4 p-4 border border-white/20 rounded-lg hover:bg-white/5 transition-colors backdrop-blur-sm">
               <Mail className="h-6 w-6" />
               <div>
                 <h3 className="font-medium">Email</h3>
-                <p className="text-gray-400">contact@example.com</p>
+                <p className="text-gray-400">arnaud.decourt.pro@gmail.com</p>
               </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 border border-white/20 rounded-lg hover:bg-white/5 transition-colors backdrop-blur-sm">
+            </a>
+            <a href="https://www.linkedin.com/in/arnaud-decourt-6096202a2/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 border border-white/20 rounded-lg hover:bg-white/5 transition-colors backdrop-blur-sm">
               <Linkedin className="h-6 w-6" />
               <div>
                 <h3 className="font-medium">LinkedIn</h3>
-                <p className="text-gray-400">linkedin.com/in/username</p>
+                <p className="text-gray-400">arnaud-decourt</p>
               </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 border border-white/20 rounded-lg hover:bg-white/5 transition-colors backdrop-blur-sm">
+            </a>
+            <a href="https://github.com/Arnaud-Dec" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 border border-white/20 rounded-lg hover:bg-white/5 transition-colors backdrop-blur-sm">
               <Github className="h-6 w-6" />
               <div>
                 <h3 className="font-medium">GitHub</h3>
-                <p className="text-gray-400">github.com/username</p>
+                <p className="text-gray-400">Arnaud-Dec</p>
               </div>
-            </div>
+            </a>
           </div>
         </section>
       </main>
 
       <footer className="container mx-auto py-6 border-t border-white/10 z-10">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400">© 2025 Portfolio. Tous droits réservés.</p>
+          <p className="text-gray-400">© 2025 Portfolio. Tous droits réservés à Arnaud Decourt.</p>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/Arnaud-Dec" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Github className="h-5 w-5" />
-            </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            </a>
+            <a href="https://www.linkedin.com/in/arnaud-decourt-6096202a2/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin className="h-5 w-5" />
-            </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            </a>
+            <a href="mailto:arnaud.decourt.pro@gmail.com" className="text-gray-400 hover:text-white transition-colors">
               <Mail className="h-5 w-5" />
-            </Link>
+            </a>
           </div>
         </div>
       </footer>
