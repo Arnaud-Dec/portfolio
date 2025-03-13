@@ -10,8 +10,8 @@ const nextConfig = {
   },
   output: 'export', // Génère un export statique
   // On retire le basePath et l'assetPrefix pour que les URLs soient relatives à la racine.
-  basePath: '',
-  assetPrefix: '',
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
   trailingSlash: true,
 };
 
