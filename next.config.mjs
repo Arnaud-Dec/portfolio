@@ -8,12 +8,12 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: 'export', // Pour générer un export statique
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+  output: 'export', // Génère un export statique
+  // On retire le basePath et l'assetPrefix pour que les URLs soient relatives à la racine.
+  basePath: '',
+  assetPrefix: '',
   trailingSlash: true,
 };
-
 
 let userConfig = undefined;
 try {
@@ -24,19 +24,10 @@ try {
 }
 
 function mergeConfig(nextConfig, userConfig) {
-  if (!userConfig) {
-    return;
-  }
-
+  if (!userConfig) return;
   for (const key in userConfig) {
-    if (
-      typeof nextConfig[key] === 'object' &&
-      !Array.isArray(nextConfig[key])
-    ) {
-      nextConfig[key] = {
-        ...nextConfig[key],
-        ...userConfig[key],
-      };
+    if (typeof nextConfig[key] === 'object' && !Array.isArray(nextConfig[key])) {
+      nextConfig[key] = { ...nextConfig[key], ...userConfig[key] };
     } else {
       nextConfig[key] = userConfig[key];
     }
