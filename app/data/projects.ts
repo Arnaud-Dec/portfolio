@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const projects = [
   {
     id: "1",
@@ -14,11 +16,12 @@ export const projects = [
     ],
     technologies: ["Swift", "ARKit", "SceneKit", "iOS", "SwiftUI", "Core Animation"],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/vueAR-logo-16-9.png?height=600&width=600",
+      "/vueAR-AR.png?height=600&width=800",
+      "/vueAR-VR.png?height=600&width=800",
     ],
-    video: "https://example.com/video.mp4",
+    video: "https://www.youtube.com/embed/MF6B7gSeJSE",
+    link: "https://github.com/MathisB2/vue-ar-project/tree/SAE-but-3-usdz-mobile",
   },
   {
     id: "2",
@@ -35,11 +38,12 @@ export const projects = [
     ],
     technologies: ["Python", "LLMs", "ESP32", "IoT", "MQTT", "C++", "TensorFlow", "WebSockets"],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/lome-icone-16-9.png?height=600&width=800",
+      "/lome-diagram-16-9.png?height=600&width=800",
+      
     ],
     video: "https://example.com/video.mp4",
+    link: "https://github.com/Arnaud-Dec/lome",
   },
   {
     id: "3",
@@ -56,11 +60,8 @@ export const projects = [
     ],
     technologies: ["Node.js", "Cryptographie", "API REST", "JWT", "PostgreSQL", "Docker", "Sécurité"],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "/Logo-Ciril-GROUP.png?height=600&width=800",
     ],
-    video: "https://example.com/video.mp4",
   },
   {
     id: "4",
@@ -82,6 +83,7 @@ export const projects = [
       "/placeholder.svg?height=600&width=800",
     ],
     video: "https://example.com/video.mp4",
+    link:"https://github.com/Arnaud-Dec/Hichat-artifact",
   },
   {
     id: "5",

@@ -115,19 +115,36 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               {project.video && (
                 <div className="mt-8">
                   <h3 className="text-xl font-bold mb-4">Vidéo de présentation</h3>
-                  <div className="relative aspect-video rounded-lg overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center">
-                    <p className="text-gray-400">Vidéo de démonstration du projet</p>
+                  <div className="relative aspect-video rounded-lg overflow-hidden border border-white/10 bg-white/5">
+                    {project.video.includes("youtube.com") || project.video.includes("youtu.be") ? (
+                      <iframe
+                        src={project.video.replace("watch?v=", "embed/").replace("youtu.be/", "www.youtube.com/embed/")}
+                        title={`Vidéo ${project.title}`}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    ) : (
+                      <video controls className="w-full h-full object-cover">
+                        <source src={project.video} type="video/mp4" />
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                      </video>
+                    )}
                   </div>
                 </div>
               )}
             </TabsContent>
           </Tabs>
 
-          <div className="flex justify-center pt-8">
-            <Button size="lg" className="bg-white text-black hover:bg-gray-200">
-              Voir le projet en ligne
-            </Button>
-          </div>
+          {project.link && (
+            <div className="flex justify-center pt-8">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-white text-black hover:bg-gray-200">
+                  Voir le projet en ligne
+                </Button>
+              </a>
+            </div>
+          )}
         </div>
       </main>
 
@@ -135,13 +152,13 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400">© 2025 Portfolio. Tous droits réservés.</p>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link href="https://github.com/Arnaud-Dec" className="text-gray-400 hover:text-white transition-colors">
               <Github className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link href="https://www.linkedin.com/in/arnaud-decourt-6096202a2/" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            <Link href="mailto:arnaud.decourt.pro@gmail.com" className="text-gray-400 hover:text-white transition-colors">
               <Mail className="h-5 w-5" />
             </Link>
           </div>

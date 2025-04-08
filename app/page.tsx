@@ -27,7 +27,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
+    <div className="relative flex flex-col min-h-screen text-white">
       <InteractiveBackground />
 
       <header className="container mx-auto py-6 z-10">
@@ -52,7 +52,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <main className="flex-1 z-10">
+      <main className="flex-1 z-10 relative">
         {/* Hero Section */}
         <section className="container mx-auto py-20 md:py-32 flex flex-col items-center text-center">
           <div className="w-full max-w-3xl mx-auto space-y-8">
@@ -174,21 +174,21 @@ export default function Home() {
               id="1"
               title="VueAR"
               description="Application Swift de visualisation d'objets 3D en réalité augmentée."
-              image="/placeholder.svg?height=400&width=600"
+              image="vueAR-logo.png?height=400&width=600"
               technologies={["Swift", "ARKit", "SceneKit", "iOS"]}
             />
             <ProjectCard
               id="2"
               title="Lome"
               description="Assistant domotique basé sur LLama 3.2 contrôlant des ESP32."
-              image="/placeholder.svg?height=400&width=600"
+              image="lome-icone.png?height=400&width=600"
               technologies={["Python", "LLMs", "ESP32", "IoT"]}
             />
             <ProjectCard
               id="3"
               title="Système de Signature"
               description="Solution de signature des licences internes pour CirilGroup."
-              image="/placeholder.svg?height=400&width=600"
+              image="/cirilgroup.png?height=400&width=600"
               technologies={["Cryptographie", "Node.js", "Sécurité", "API"]}
             />
             <ProjectCard
