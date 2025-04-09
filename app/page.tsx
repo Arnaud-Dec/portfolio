@@ -174,21 +174,21 @@ export default function Home() {
               id="1"
               title="VueAR"
               description="Application Swift de visualisation d'objets 3D en réalité augmentée."
-              image="assets/vuear/vueAR-logo.png?height=400&width=600"
+              image="/assets/vuear/vueAR-logo.png?height=400&width=600"
               technologies={["Swift", "ARKit", "SceneKit", "iOS"]}
             />
             <ProjectCard
               id="2"
               title="Lome"
               description="Assistant domotique basé sur LLama 3.2 contrôlant des ESP32."
-              image="assets/lome/lome-icone.png?height=400&width=600"
+              image="/assets/lome/lome-icone.png?height=400&width=600"
               technologies={["Python", "LLMs", "ESP32", "IoT"]}
             />
             <ProjectCard
               id="3"
               title="Système de Signature"
               description="Solution de signature des licences internes pour CirilGroup."
-              image="assets/ciril/cirilgroup.png?height=400&width=600"
+              image="/assets/ciril/cirilgroup.png?height=400&width=600"
               technologies={["Cryptographie", "Node.js", "Sécurité", "API"]}
             />
             <ProjectCard
