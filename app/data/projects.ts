@@ -16,9 +16,9 @@ export const projects = [
     ],
     technologies: ["Swift", "ARKit", "SceneKit", "iOS", "SwiftUI", "Core Animation"],
     images: [
-      "./../../vueAR-logo-16-9.png?height=600&width=600",
-      "./../../vueAR-AR.png?height=600&width=800",
-      "./../../vueAR-VR.png?height=600&width=800",
+      "/assets/vuear/vueAR-logo-16-9.png?height=600&width=600",
+      "/assets/vuear/vueAR-AR.png?height=600&width=800",
+      "/assets/vuear/vueAR-VR.png?height=600&width=800",
     ],
     video: "https://www.youtube.com/embed/MF6B7gSeJSE",
     link: "https://github.com/MathisB2/vue-ar-project/tree/SAE-but-3-usdz-mobile",
@@ -38,8 +38,8 @@ export const projects = [
     ],
     technologies: ["Python", "LLMs", "ESP32", "IoT", "MQTT", "C++", "TensorFlow", "WebSockets"],
     images: [
-      "../../lome-icone-16-9.png?height=600&width=800",
-      "../../lome-diagram-16-9.png?height=600&width=800",
+      "/assets/lome/lome-icone-16-9.png?height=600&width=800",
+      "/assets/lome/lome-diagram-16-9.png?height=600&width=800",
       
     ],
     video: "https://example.com/video.mp4",
@@ -60,7 +60,7 @@ export const projects = [
     ],
     technologies: ["Node.js", "Cryptographie", "API REST", "JWT", "PostgreSQL", "Docker", "Sécurité"],
     images: [
-      "../../Logo-Ciril-GROUP.png?height=600&width=800",
+      "/assets/ciril/Logo-Ciril-GROUP.png?height=600&width=800",
     ],
   },
   {
