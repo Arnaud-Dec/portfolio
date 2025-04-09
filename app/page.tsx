@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail, Code, Server, Cpu, Terminal } from "lucide-react"
 
+import { fixAssetPath } from "@/lib/fixAssetPath"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
 import InteractiveBackground from "@/components/interactive-background"
@@ -174,21 +175,21 @@ export default function Home() {
               id="1"
               title="VueAR"
               description="Application Swift de visualisation d'objets 3D en réalité augmentée."
-              image="/assets/vuear/vueAR-logo.png?height=400&width=600"
+              image={fixAssetPath("/assets/vuear/vueAR-logo.png?height=400&width=600")}
               technologies={["Swift", "ARKit", "SceneKit", "iOS"]}
             />
             <ProjectCard
               id="2"
               title="Lome"
               description="Assistant domotique basé sur LLama 3.2 contrôlant des ESP32."
-              image="/assets/lome/lome-icone.png?height=400&width=600"
+              image={fixAssetPath("/assets/lome/lome-icone.png?height=400&width=600")}
               technologies={["Python", "LLMs", "ESP32", "IoT"]}
             />
             <ProjectCard
               id="3"
               title="Système de Signature"
               description="Solution de signature des licences internes pour CirilGroup."
-              image="/assets/ciril/cirilgroup.png?height=400&width=600"
+              image={fixAssetPath("/assets/ciril/cirilgroup.png?height=400&width=600")}
               technologies={["Cryptographie", "Node.js", "Sécurité", "API"]}
             />
             <ProjectCard
@@ -202,14 +203,14 @@ export default function Home() {
               id="5"
               title="Hichat (Flutter)"
               description="Version cross-platform de Hichat développée avec Flutter."
-              image="/placeholder.svg?height=400&width=600"
+              image={fixAssetPath("/placeholder.svg?height=400&width=600")}
               technologies={["Flutter", "Dart", "Firebase", "Cross-platform"]}
             />
             <ProjectCard
               id="6"
               title="Projet R&D"
               description="Projet de recherche en cours de développement."
-              image="/placeholder.svg?height=400&width=600"
+              image={fixAssetPath("/placeholder.svg?height=400&width=600")}
               technologies={["R&D", "Innovation", "Prototype"]}
             />
           </div>

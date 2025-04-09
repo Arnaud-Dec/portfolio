@@ -1,4 +1,5 @@
 import { link } from "fs";
+import { fixAssetPath } from "@/lib/fixAssetPath";
 
 export const projects = [
   {
