@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { Github, Linkedin, Mail } from "lucide-react"
 
+import {fixAssetPath} from "@/lib/fixAssetPath"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import TechBadge from "@/components/tech-badge"
@@ -62,7 +63,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               ))}
             </div>
             <div className="h-[60vh] relative rounded-xl overflow-hidden border border-white/10">
-              <Image src={project.images[0] || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+              <Image src={fixAssetPath(project.images[0] || "/placeholder.svg")} alt={project.title} fill className="object-cover" />
             </div>
           </div>
 
@@ -103,7 +104,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                 {project.images.map((image, index) => (
                   <div key={index} className="relative aspect-video rounded-lg overflow-hidden border border-white/10">
                     <Image
-                      src={image || "/placeholder.svg"}
+                      src={fixAssetPath(image || "/placeholder.svg")}
                       alt={`${project.title} - Image ${index + 1}`}
                       fill
                       className="object-cover"
