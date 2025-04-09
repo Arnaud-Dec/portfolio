@@ -16,9 +16,9 @@ export const projects = [
     ],
     technologies: ["Swift", "ARKit", "SceneKit", "iOS", "SwiftUI", "Core Animation"],
     images: [
-      "../../vueAR-logo-16-9.png?height=600&width=600",
-      "../../vueAR-AR.png?height=600&width=800",
-      "../../vueAR-VR.png?height=600&width=800",
+      "./../../vueAR-logo-16-9.png?height=600&width=600",
+      "./../../vueAR-AR.png?height=600&width=800",
+      "./../../vueAR-VR.png?height=600&width=800",
     ],
     video: "https://www.youtube.com/embed/MF6B7gSeJSE",
     link: "https://github.com/MathisB2/vue-ar-project/tree/SAE-but-3-usdz-mobile",
