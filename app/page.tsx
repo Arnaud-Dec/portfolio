@@ -188,7 +188,7 @@ export default function Home() {
               id="3"
               title="Système de Signature"
               description="Solution de signature des licences internes pour CirilGroup."
-              image="/cirilgroup.png?height=400&width=600"
+              image="cirilgroup.png?height=400&width=600"
               technologies={["Cryptographie", "Node.js", "Sécurité", "API"]}
             />
             <ProjectCard
