@@ -16,9 +16,9 @@ export const projects = [
     ],
     technologies: ["Swift", "ARKit", "SceneKit", "iOS", "SwiftUI", "Core Animation"],
     images: [
-      "vueAR-logo-16-9.png?height=600&width=600",
-      "vueAR-AR.png?height=600&width=800",
-      "vueAR-VR.png?height=600&width=800",
+      "../../vueAR-logo-16-9.png?height=600&width=600",
+      "../../vueAR-AR.png?height=600&width=800",
+      "../../vueAR-VR.png?height=600&width=800",
     ],
     video: "https://www.youtube.com/embed/MF6B7gSeJSE",
     link: "https://github.com/MathisB2/vue-ar-project/tree/SAE-but-3-usdz-mobile",
@@ -38,8 +38,8 @@ export const projects = [
     ],
     technologies: ["Python", "LLMs", "ESP32", "IoT", "MQTT", "C++", "TensorFlow", "WebSockets"],
     images: [
-      "/lome-icone-16-9.png?height=600&width=800",
-      "/lome-diagram-16-9.png?height=600&width=800",
+      "../../lome-icone-16-9.png?height=600&width=800",
+      "../../lome-diagram-16-9.png?height=600&width=800",
       
     ],
     video: "https://example.com/video.mp4",
@@ -60,7 +60,7 @@ export const projects = [
     ],
     technologies: ["Node.js", "Cryptographie", "API REST", "JWT", "PostgreSQL", "Docker", "Sécurité"],
     images: [
-      "/Logo-Ciril-GROUP.png?height=600&width=800",
+      "../../Logo-Ciril-GROUP.png?height=600&width=800",
     ],
   },
   {
@@ -78,9 +78,9 @@ export const projects = [
     ],
     technologies: ["Kotlin", "Android", "Jetpack Compose", "Firebase", "QR Code", "WebRTC", "Chiffrement"],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
     ],
     video: "https://example.com/video.mp4",
     link:"https://github.com/Arnaud-Dec/Hichat-artifact",
@@ -100,9 +100,9 @@ export const projects = [
     ],
     technologies: ["Flutter", "Dart", "Firebase", "BLoC", "Cross-platform", "QR Code", "CI/CD"],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
     ],
     video: "https://example.com/video.mp4",
   },
@@ -121,10 +121,9 @@ export const projects = [
     ],
     technologies: ["R&D", "Innovation", "Prototype", "Recherche"],
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
+      "../../placeholder.svg?height=600&width=800",
     ],
-    video: "https://example.com/video.mp4",
   },
 ]
