@@ -42,6 +42,8 @@ export const projects = [
     images: [
       "/assets/lome/lome-icone-16-9.png?height=600&width=800",
       "/assets/lome/lome-diagram-16-9.png?height=600&width=800",
+      "/assets/lome/lome-login.JPG?height=600&width=800",
+      "/assets/lome/lome-message.JPG?height=600&width=800",
       
     ],
     video: "https://youtu.be/D51o6VYnlKQ",
@@ -109,11 +111,11 @@ export const projects = [
       "/assets/hichatF/hichatF-message.png?height=600&width=800",
       "/assets/hichatF/hichatF-QR.png?height=600&width=800",
     ],
-    video: "https://example.com/video.mp4",
+    video: "https://youtu.be/J17WAU8hnLY",
   },
   {
     id: "6",
-    title: "Projet R&D",
+    title: "Robot de Trading",
     description:
       "Projet de recherche et développement en cours, explorant de nouvelles technologies et approches innovantes. Les détails seront communiqués ultérieurement.",
     tasks: [
