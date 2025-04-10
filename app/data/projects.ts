@@ -128,7 +128,7 @@ export const projects = [
     ],
     technologies: ["R&D", "Innovation", "Prototype", "Recherche"],
     images: [
-      "assets/bot/bot-trad-graph.png?height=600&width=800",
+      "/assets/bot/bot-trad-graph.png?height=600&width=800",
     ],
   },
 ]
