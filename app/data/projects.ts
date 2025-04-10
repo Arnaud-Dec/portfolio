@@ -42,8 +42,8 @@ export const projects = [
     images: [
       "/assets/lome/lome-icone-16-9.png?height=600&width=800",
       "/assets/lome/lome-diagram-16-9.png?height=600&width=800",
-      "/assets/lome/lome-login.JPG?height=600&width=800",
-      "/assets/lome/lome-message.JPG?height=600&width=800",
+      "/assets/lome/lome-login.png?height=600&width=800",
+      "/assets/lome/lome-message.png?height=600&width=800",
       
     ],
     video: "https://youtu.be/D51o6VYnlKQ",
@@ -128,9 +128,7 @@ export const projects = [
     ],
     technologies: ["R&D", "Innovation", "Prototype", "Recherche"],
     images: [
-      "../../placeholder.svg?height=600&width=800",
-      "../../placeholder.svg?height=600&width=800",
-      "../../placeholder.svg?height=600&width=800",
+      "assets/bot/bot-trad-graph.png?height=600&width=800",
     ],
   },
 ]

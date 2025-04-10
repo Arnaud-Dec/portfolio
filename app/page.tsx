@@ -208,10 +208,10 @@ export default function Home() {
             />
             <ProjectCard
               id="6"
-              title="Projet R&D"
-              description="Projet de recherche en cours de développement."
+              title="Robot de Trading"
+              description="Projet de création d'un robot d'analyse financière en cours de développement."
               image={fixAssetPath("/placeholder.svg?height=400&width=600")}
-              technologies={["R&D", "Innovation", "Prototype"]}
+              technologies={["Python", "Prototype","Recherche" ,"Flask", "API","Docker"]}
             />
           </div>
         </section>
