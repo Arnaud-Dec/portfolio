@@ -29,7 +29,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       <header className="container mx-auto py-6 z-10">
         <nav className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold tracking-tighter">
-            ARNAUD.DEV
+            ARNAUD-DEC
           </Link>
           <div className="flex items-center gap-4">
             <Link href="/" className="hover:text-gray-400 transition-colors">

@@ -34,7 +34,7 @@ export default function Home() {
       <header className="container mx-auto py-6 z-10">
         <nav className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold tracking-tighter">
-            ARNAUD.DEV
+            ARNAUD-DEC
           </Link>
           <div className="flex items-center gap-4">
             <Link href="/" className="hover:text-gray-400 transition-colors">
@@ -196,14 +196,14 @@ export default function Home() {
               id="4"
               title="Hichat (Kotlin)"
               description="Application de communication avec ajout d'amis via QR code."
-              image="/placeholder.svg?height=400&width=600"
+              image={fixAssetPath("/assets/hichatK/hichat-logo.png?height=600&width=800")}
               technologies={["Kotlin", "Android", "Firebase", "QR Code"]}
             />
             <ProjectCard
               id="5"
               title="Hichat (Flutter)"
               description="Version cross-platform de Hichat développée avec Flutter."
-              image={fixAssetPath("/placeholder.svg?height=400&width=600")}
+              image={fixAssetPath("/assets/hichatF/hichat-logo.png?height=600&width=800")}
               technologies={["Flutter", "Dart", "Firebase", "Cross-platform"]}
             />
             <ProjectCard
