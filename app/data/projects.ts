@@ -80,9 +80,11 @@ export const projects = [
     ],
     technologies: ["Kotlin", "Android", "Jetpack Compose", "Firebase", "QR Code", "WebRTC", "Chiffrement"],
     images: [
-      "../../placeholder.svg?height=600&width=800",
-      "../../placeholder.svg?height=600&width=800",
-      "../../placeholder.svg?height=600&width=800",
+      "/assets/hichatK/hichat-logo.png?height=600&width=800",
+      "/assets/hichatK/hichatK-home.png?height=600&width=800",
+      "/assets/hichatK/hichatK-login.png?height=600&width=800",
+      "/assets/hichatK/hichatK-message.png?height=600&width=800",
+      "/assets/hichatK/hichatK-QR.png?height=600&width=800"
     ],
     link:"https://github.com/Arnaud-Dec/Hichat-artifact",
   },
