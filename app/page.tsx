@@ -210,7 +210,7 @@ export default function Home() {
               id="6"
               title="Robot de Trading"
               description="Projet de création d'un robot d'analyse financière en cours de développement."
-              image={fixAssetPath("/placeholder.svg?height=400&width=600")}
+              image={fixAssetPath("/assets/bot/bot-logo.png?height=600&width=800")}
               technologies={["Python", "Prototype","Recherche" ,"Flask", "API","Docker"]}
             />
           </div>
