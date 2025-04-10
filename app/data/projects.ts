@@ -44,7 +44,7 @@ export const projects = [
       "/assets/lome/lome-diagram-16-9.png?height=600&width=800",
       
     ],
-    video: "https://example.com/video.mp4",
+    video: "https://youtu.be/D51o6VYnlKQ",
     link: "https://github.com/Arnaud-Dec/lome",
   },
   {
@@ -84,7 +84,6 @@ export const projects = [
       "../../placeholder.svg?height=600&width=800",
       "../../placeholder.svg?height=600&width=800",
     ],
-    video: "https://example.com/video.mp4",
     link:"https://github.com/Arnaud-Dec/Hichat-artifact",
   },
   {
