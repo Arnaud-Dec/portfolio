@@ -176,35 +176,35 @@ export default function Home() {
               title="VueAR"
               description="Application Swift de visualisation d'objets 3D en réalité augmentée."
               image={fixAssetPath("/assets/vuear/vueAR-logo-16-9.png?height=400&width=600")}
-              technologies={["Swift", "ARKit", "RealityKit", "iOS"]}
+              technologies={["Swift","ARKit","RealityKit","SceneKit","SwiftUI","Core Animation","simd","USDZ","GLB","API REST"]}
             />
             <ProjectCard
               id="2"
               title="Lome"
               description="Assistant vocal pour contrôler des objets IoT via ESP32 et LLM."
               image={fixAssetPath("/assets/lome/lome-icone-16-9.png?height=400&width=600")}
-              technologies={["Python", "LLMs", "ESP32", "IoT"]}
+              technologies={["Python", "LLMs", "ESP32", "IoT","MQTT", "TensorFlow", "WebSockets", "Docker", "Flask", "Redis"]}
             />
             <ProjectCard
               id="3"
               title="Système de Signature"
               description="Solution de signature des licences internes pour CirilGroup."
               image={fixAssetPath("/assets/ciril/cirilgroup.png?height=400&width=600")}
-              technologies={["Cryptographie", "Sécurité", "Tool" ,"Java"]}
+              technologies={["Cryptographie", "Sécurité", "Tool" ,"Java", "Maven", "PostgreSQL", "JUnit", "SHA256"]}
             />
             <ProjectCard
               id="4"
               title="Hichat (Kotlin)"
               description="App de messagerie avec ajout d’amis via QR code et notifications en temps réel."
               image={fixAssetPath("/assets/hichatK/hichat-logo.png?height=600&width=800")}
-              technologies={["Kotlin", "Android", "Firebase", "QR Code"]}
+              technologies={["Kotlin","Android","XML","Firebase (Auth, Firestore)","Room","CI/CD","GitHub Actions","GitLab CI","SonarCloud","QR Code","MVVM"]}
             />
             <ProjectCard
               id="5"
               title="Hichat (Flutter)"
               description="Version Flutter de Hichat avec support iOS et Android, intégration Firebase."
               image={fixAssetPath("/assets/hichatF/hichat-logo.png?height=600&width=800")}
-              technologies={["Flutter", "Dart", "Firebase", "Cross-platform"]}
+              technologies={["Flutter","Dart","Firebase (Auth, Firestore, Functions)","MVVM","Provider","QR Code","Cloud Messaging","Cross-platform"]}
             />
             <ProjectCard
               id="6"

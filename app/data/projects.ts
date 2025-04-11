@@ -20,16 +20,7 @@ export const projects = [
       "Rédaction d’un manuel d'installation complet"
     ],
     technologies: [
-      "Swift",
-      "ARKit",
-      "RealityKit",
-      "SceneKit",
-      "SwiftUI",
-      "Core Animation",
-      "simd",
-      "USDZ",
-      "GLB",
-      "API REST"
+      "Swift","ARKit","RealityKit","SceneKit","SwiftUI","Core Animation","simd","USDZ","GLB","API REST"
     ],
     images: [
       "/assets/vuear/vueAR-logo-16-9.png?height=600&width=600",
@@ -55,7 +46,7 @@ export const projects = [
       "Gestion du contexte utilisateur avec Redis pour des réponses personnalisées",
       "Déploiement conteneurisé avec Docker et orchestration via Docker Compose"
     ],
-    technologies: ["Python", "LLMs", "ESP32", "IoT", "MQTT", "C++", "TensorFlow", "WebSockets", "Docker", "Flask", "Redis"],
+    technologies: ["Python", "LLMs", "ESP32", "IoT", "MQTT", "TensorFlow", "WebSockets", "Docker", "Flask", "Redis"],
     images: [
       "/assets/lome/lome-icone-16-9.png?height=600&width=800",
       "/assets/lome/lome-diagram-16-9.png?height=600&width=800",
@@ -70,16 +61,14 @@ export const projects = [
     id: "3",
     title: "Système de Signature",
     description:
-      "Système de signature des licences internes développé pour CirilGroup. Cette solution permet de générer, valider et gérer les licences logicielles de manière sécurisée. Le système utilise des algorithmes cryptographiques avancés pour garantir l'authenticité des licences et empêcher leur utilisation non autorisée.",
+      "Système de signature des licences internes pour CirilGroup. Outil Java (jar compilé avec Maven) qui récupère des infos depuis une BDD PostgreSQL, effectue des opérations internes via JUnit, et applique un hash SHA256 pour sécuriser les licences.",
     tasks: [
-      "Conception de l'architecture du système de gestion des licences",
-      "Implémentation des algorithmes cryptographiques pour la signature et vérification",
-      "Développement d'une API REST pour l'intégration avec les produits existants",
-      "Création d'un tableau de bord d'administration pour la gestion des licences",
-      "Mise en place d'un système de détection des utilisations frauduleuses",
-      "Documentation complète et formation des équipes internes",
+      "Récupération d'informations depuis la BDD PostgreSQL",
+      "Exécution d'opérations internes via JUnit",
+      "Hashage sécurisé des licences avec SHA256",
+      "Mise à jour sécurisée des licences dans la BDD"
     ],
-    technologies: ["Node.js", "Cryptographie", "API REST", "JWT", "PostgreSQL", "Docker", "Sécurité"],
+    technologies: ["Cryptographie", "Sécurité", "Tool" ,"Java", "Maven", "PostgreSQL", "JUnit", "SHA256"],
     images: [
       "/assets/ciril/Logo-Ciril-GROUP.png?height=600&width=800",
     ],
@@ -101,19 +90,7 @@ export const projects = [
       "Ajout d'une popup d'avertissement en preprod pour informer l'utilisateur",
       "Gestion dynamique du pseudo utilisateur via Firestore"
     ],
-    technologies: [
-      "Kotlin",
-      "Android",
-      "Jetpack Compose",
-      "Firebase (Auth, Firestore)",
-      "Room",
-      "CI/CD",
-      "GitHub Actions",
-      "GitLab CI",
-      "SonarCloud",
-      "QR Code",
-      "MVVM"
-    ],
+    technologies: ["Kotlin","Android","XML","Firebase (Auth, Firestore)","Room","CI/CD","GitHub Actions","GitLab CI","SonarCloud","QR Code","MVVM"],
     images: [
       "/assets/hichatK/hichat-logo.png?height=600&width=800",
       "/assets/hichatK/hichatK-home.png?height=600&width=800",
@@ -141,15 +118,7 @@ export const projects = [
       "Refactorisation régulière pour maintenir une base de code claire et scalable"
     ],
     technologies: [
-      "Flutter",
-      "Dart",
-      "Firebase (Auth, Firestore, Functions)",
-      "MVVM",
-      "Provider",
-      "QR Code",
-      "Cloud Messaging",
-      "Cross-platform"
-    ],
+"Flutter","Dart","Firebase (Auth, Firestore, Functions)","MVVM","Provider","QR Code","Cloud Messaging","Cross-platform"],
     images: [
       "/assets/hichatF/hichat-logo.png?height=600&width=800",
       "/assets/hichatF/hichatF-home.png?height=600&width=800",
@@ -174,16 +143,7 @@ export const projects = [
       "Création d'une API REST pour obtenir le prix actuel via endpoint dédié",
       "Préparation du projet à l'intégration future d’un moteur de deep learning"
     ],
-    technologies: [
-      "Python",
-      "Flask",
-      "ccxt",
-      "Binance API",
-      "pandas",
-      "numpy",
-      "mplfinance",
-      "Plotly",
-      "SQLite"
+    technologies: ["Python","Flask","ccxt","Binance API","pandas","numpy", "mplfinance","Plotly","SQLite"
     ],
     images: [
       "/assets/bot/bot-logo.png?height=600&width=800",
