@@ -14,17 +14,32 @@ export const projects = [
       "Création de fonctionnalités d'interaction avec les objets (rotation, zoom, déplacement)",
       "Optimisation des performances pour différents appareils iOS",
       "Mise en place d'une bibliothèque de modèles 3D préchargés",
+      "Transformation des fichiers GLB vers le format USDZ pour une compatibilité iOS étendue",
+      "Application des transformations (position, rotation, échelle) fournies par l'API dans la scène AR",
+      "Analyse et tests d’ARKit pour garantir un rendu AR optimal",
+      "Rédaction d’un manuel d'installation complet"
     ],
-    technologies: ["Swift", "ARKit", "SceneKit", "iOS", "SwiftUI", "Core Animation"],
+    technologies: [
+      "Swift",
+      "ARKit",
+      "RealityKit",
+      "SceneKit",
+      "SwiftUI",
+      "Core Animation",
+      "simd",
+      "USDZ",
+      "GLB",
+      "API REST"
+    ],
     images: [
       "/assets/vuear/vueAR-logo-16-9.png?height=600&width=600",
       "/assets/vuear/vueAR-AR.png?height=600&width=800",
       "/assets/vuear/vueAR-VR.png?height=600&width=800",
-      "/assets/vuear/vueAR-projets.png?height=600&width=800",
+      "/assets/vuear/vueAR-projets.png?height=600&width=800"
     ],
     video: "https://www.youtube.com/embed/MF6B7gSeJSE",
-    link: "https://github.com/MathisB2/vue-ar-project/tree/SAE-but-3-usdz-mobile",
-  },
+    link: "https://github.com/MathisB2/vue-ar-project/tree/SAE-but-3-usdz-mobile"
+  },  
   {
     id: "2",
     title: "Lome",
@@ -37,8 +52,10 @@ export const projects = [
       "Implémentation d'un système d'apprentissage des habitudes utilisateur",
       "Développement d'une interface web pour la configuration et le monitoring",
       "Optimisation de la consommation énergétique des appareils connectés",
+      "Gestion du contexte utilisateur avec Redis pour des réponses personnalisées",
+      "Déploiement conteneurisé avec Docker et orchestration via Docker Compose"
     ],
-    technologies: ["Python", "LLMs", "ESP32", "IoT", "MQTT", "C++", "TensorFlow", "WebSockets"],
+    technologies: ["Python", "LLMs", "ESP32", "IoT", "MQTT", "C++", "TensorFlow", "WebSockets", "Docker", "Flask", "Redis"],
     images: [
       "/assets/lome/lome-icone-16-9.png?height=600&width=800",
       "/assets/lome/lome-diagram-16-9.png?height=600&width=800",
@@ -71,16 +88,32 @@ export const projects = [
     id: "4",
     title: "Hichat (Kotlin)",
     description:
-      "Hichat est une application de messagerie innovante développée en Kotlin pour Android. Sa particularité réside dans son système d'ajout de contacts: les utilisateurs peuvent uniquement se connecter en scannant mutuellement leurs QR codes, garantissant ainsi une vérification physique des contacts et renforçant la sécurité. L'application offre des fonctionnalités de messagerie instantanée, partage de médias et appels vidéo.",
+      "Hichat est une application de messagerie sécurisée développée en Kotlin pour Android. Elle repose sur Firestore pour le stockage des messages et des contacts. Son originalité réside dans son système d'ajout d'amis exclusivement par QR code, empêchant toute usurpation d'identité. J’ai principalement travaillé sur l’intégration complète de Firebase et la mise en place d’une CI/CD robuste, ainsi que sur plusieurs fonctionnalités de l’app côté frontend.",
     tasks: [
-      "Développement de l'application native Android avec Kotlin et Jetpack Compose",
-      "Implémentation du système de génération et lecture de QR codes",
-      "Création d'un backend sécurisé avec Firebase pour la gestion des utilisateurs",
-      "Développement des fonctionnalités de messagerie en temps réel",
-      "Mise en place du chiffrement de bout en bout pour les conversations",
-      "Optimisation des performances et de l'expérience utilisateur",
+      "Implémentation complète de Firebase : Firestore, Authentication et gestion des utilisateurs",
+      "Mise en place du système d'ajout d'amis via QR code avec synchronisation dans Firestore",
+      "Développement des fonctionnalités de messagerie instantanée en temps réel avec Firestore",
+      "Gestion des connexions en ligne et hors ligne avec Room + Firebase",
+      "Création de plusieurs fragments (Home, Profil, Favoris, Chat/Message)",
+      "Développement d'une CI/CD complète avec GitHub Actions et GitLab CI",
+      "Configuration de 3 environnements distincts (dev, preprod, prod) avec notifications dédiées",
+      "Intégration de SonarCloud pour l’analyse statique du code",
+      "Ajout d'une popup d'avertissement en preprod pour informer l'utilisateur",
+      "Gestion dynamique du pseudo utilisateur via Firestore"
     ],
-    technologies: ["Kotlin", "Android", "Jetpack Compose", "Firebase", "QR Code", "WebRTC", "Chiffrement"],
+    technologies: [
+      "Kotlin",
+      "Android",
+      "Jetpack Compose",
+      "Firebase (Auth, Firestore)",
+      "Room",
+      "CI/CD",
+      "GitHub Actions",
+      "GitLab CI",
+      "SonarCloud",
+      "QR Code",
+      "MVVM"
+    ],
     images: [
       "/assets/hichatK/hichat-logo.png?height=600&width=800",
       "/assets/hichatK/hichatK-home.png?height=600&width=800",
@@ -88,45 +121,70 @@ export const projects = [
       "/assets/hichatK/hichatK-message.png?height=600&width=800",
       "/assets/hichatK/hichatK-QR.png?height=600&width=800"
     ],
-    link:"https://github.com/Arnaud-Dec/Hichat-artifact",
-  },
+    link: "https://github.com/Arnaud-Dec/Hichat-artifact"
+  },  
   {
     id: "5",
     title: "Hichat (Flutter)",
     description:
-      "Version cross-platform de Hichat développée avec Flutter, permettant de déployer l'application sur iOS et Android à partir d'une base de code unique. Cette version conserve le concept d'ajout de contacts via QR code tout en offrant une expérience utilisateur cohérente sur les différentes plateformes.",
+      "Hichat est une application de messagerie sécurisée cross-platform développée en Flutter. Elle propose une expérience fluide sur iOS et Android en s’appuyant exclusivement sur Firebase pour la gestion des utilisateurs, des messages et des notifications. J’ai réalisé presque l’intégralité de l’application, en mettant en place une architecture propre MVVM avec séparation claire entre vue, domaine et données. Les contacts s’ajoutent uniquement via un scan de QR code, garantissant une sécurité renforcée.",
     tasks: [
-      "Refactorisation de l'application en Flutter pour le support multi-plateformes",
-      "Adaptation de l'interface utilisateur pour respecter les guidelines iOS et Android",
-      "Optimisation des performances sur les différents appareils",
-      "Intégration des API natives pour la gestion des caméras et QR codes",
-      "Mise en place d'une architecture propre avec BLoC pattern",
-      "Tests automatisés pour garantir la stabilité sur les différentes plateformes",
+      "Définition et mise en place de l'architecture MVVM avec repository, datasources et modèles",
+      "Développement complet de l’interface utilisateur (pages login, register, home, message, add friend)",
+      "Connexion à Firebase pour la gestion des messages, utilisateurs et favoris",
+      "Implémentation de l’authentification Firebase (inscription, connexion, logout)",
+      "Ajout du système de notifications avec Firebase Functions et configuration des canaux",
+      "Affichage du dernier message dans les aperçus de conversation",
+      "Gestion des erreurs de connexion et affichage de messages adaptés",
+      "Intégration de la génération et lecture de QR codes pour l’ajout d’amis",
+      "Ajout d’une image de lancement et personnalisation de l’apparence de l’app",
+      "Refactorisation régulière pour maintenir une base de code claire et scalable"
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "BLoC", "Cross-platform", "QR Code", "CI/CD"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase (Auth, Firestore, Functions)",
+      "MVVM",
+      "Provider",
+      "QR Code",
+      "Cloud Messaging",
+      "Cross-platform"
+    ],
     images: [
       "/assets/hichatF/hichat-logo.png?height=600&width=800",
       "/assets/hichatF/hichatF-home.png?height=600&width=800",
       "/assets/hichatF/hichatF-login.png?height=600&width=800",
       "/assets/hichatF/hichatF-message.png?height=600&width=800",
-      "/assets/hichatF/hichatF-QR.png?height=600&width=800",
+      "/assets/hichatF/hichatF-QR.png?height=600&width=800"
     ],
-    video: "https://youtu.be/J17WAU8hnLY",
-  },
+    video: "https://youtu.be/J17WAU8hnLY"
+  },  
   {
     id: "6",
     title: "Robot de Trading",
     description:
-      "Projet de recherche et développement en cours, explorant de nouvelles technologies et approches innovantes. Les détails seront communiqués ultérieurement.",
+      "CryptoBot est un projet de recherche personnel visant à étudier les comportements des cryptomonnaies pour en identifier les patterns et alimenter, à terme, une IA de deep learning capable de trader de façon autonome. Le but n’est pas le profit mais l’analyse scientifique des dynamiques de marché. Le bot collecte des données en temps réel depuis Binance, les stocke localement, génère des visualisations, calcule des indicateurs (CCI, rendements journaliers) et peut, en option, exécuter des trades sur un environnement de test. Une interface web Flask permet la consultation et l’analyse graphique des données.",
     tasks: [
-      "Recherche et veille technologique",
-      "Prototypage et tests de concepts",
-      "Développement de preuves de concept",
-      "Analyse de faisabilité et d'impact",
-      "Documentation des résultats et apprentissages",
-      "Préparation pour l'industrialisation",
+      "Récupération en temps réel de données OHLCV depuis Binance via ccxt",
+      "Traitement, structuration et stockage des données dans une base SQLite",
+      "Création de visualisations avec Plotly et mplfinance (candlestick, CCI, volumes)",
+      "Calcul d’indicateurs techniques : rendement journalier, CCI, variation en %",
+      "Implémentation d’un bot de trading simple avec logique buy/sell testable sur testnet",
+      "Développement d’un tableau de bord web avec Flask (prix en temps réel, stats, analyse graphique)",
+      "Création d'une API REST pour obtenir le prix actuel via endpoint dédié",
+      "Préparation du projet à l'intégration future d’un moteur de deep learning"
     ],
-    technologies: ["R&D", "Innovation", "Prototype", "Recherche"],
+    technologies: [
+      "Python",
+      "Flask",
+      "ccxt",
+      "Binance API",
+      "pandas",
+      "numpy",
+      "mplfinance",
+      "Plotly",
+      "SQLite"
+    ],
     images: [
       "/assets/bot/bot-logo.png?height=600&width=800",
       "/assets/bot/bot-trad-graph.png?height=600&width=800",

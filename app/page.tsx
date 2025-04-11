@@ -175,14 +175,14 @@ export default function Home() {
               id="1"
               title="VueAR"
               description="Application Swift de visualisation d'objets 3D en réalité augmentée."
-              image={fixAssetPath("/assets/vuear/vueAR-logo.png?height=400&width=600")}
-              technologies={["Swift", "ARKit", "SceneKit", "iOS"]}
+              image={fixAssetPath("/assets/vuear/vueAR-logo-16-9.png?height=400&width=600")}
+              technologies={["Swift", "ARKit", "RealityKit", "iOS"]}
             />
             <ProjectCard
               id="2"
               title="Lome"
-              description="Assistant domotique basé sur LLama 3.2 contrôlant des ESP32."
-              image={fixAssetPath("/assets/lome/lome-icone.png?height=400&width=600")}
+              description="Assistant vocal pour contrôler des objets IoT via ESP32 et LLM."
+              image={fixAssetPath("/assets/lome/lome-icone-16-9.png?height=400&width=600")}
               technologies={["Python", "LLMs", "ESP32", "IoT"]}
             />
             <ProjectCard
@@ -190,28 +190,28 @@ export default function Home() {
               title="Système de Signature"
               description="Solution de signature des licences internes pour CirilGroup."
               image={fixAssetPath("/assets/ciril/cirilgroup.png?height=400&width=600")}
-              technologies={["Cryptographie", "Node.js", "Sécurité", "API"]}
+              technologies={["Cryptographie", "Sécurité", "Tool" ,"Java"]}
             />
             <ProjectCard
               id="4"
               title="Hichat (Kotlin)"
-              description="Application de communication avec ajout d'amis via QR code."
+              description="App de messagerie avec ajout d’amis via QR code et notifications en temps réel."
               image={fixAssetPath("/assets/hichatK/hichat-logo.png?height=600&width=800")}
               technologies={["Kotlin", "Android", "Firebase", "QR Code"]}
             />
             <ProjectCard
               id="5"
               title="Hichat (Flutter)"
-              description="Version cross-platform de Hichat développée avec Flutter."
+              description="Version Flutter de Hichat avec support iOS et Android, intégration Firebase."
               image={fixAssetPath("/assets/hichatF/hichat-logo.png?height=600&width=800")}
               technologies={["Flutter", "Dart", "Firebase", "Cross-platform"]}
             />
             <ProjectCard
               id="6"
               title="Robot de Trading"
-              description="Projet de création d'un robot d'analyse financière en cours de développement."
+              description="Robot d’analyse financière avec IA et API Flask pour exécuter des stratégies de trading."
               image={fixAssetPath("/assets/bot/bot-logo.png?height=600&width=800")}
-              technologies={["Python", "Prototype","Recherche" ,"Flask", "API","Docker"]}
+              technologies={["Python", "IA","Recherche" ,"Flask", "API","Docker"]}
             />
           </div>
         </section>
