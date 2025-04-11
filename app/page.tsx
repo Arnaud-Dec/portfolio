@@ -68,7 +68,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Alternant en développement R&D chez CirilGroup et étudiant au BUT Lyon 1, je suis un touche-à-tout tech qui aime explorer différents domaines sans me cantonner à une seule spécialité. Du mobile à l'IoT en passant par l'IA, je m'amuse à créer des projets variés qui répondent à des problématiques concrètes. Ma curiosité me pousse constamment à apprendre de nouvelles technologies et à les combiner de façon créative.
+              Alternant en développement R&D chez CirilGroup et étudiant au BUT Lyon 1, je suis un touche-à-tout passionné par la tech. Polyvalent et curieux, j'explore le mobile, l'IoT, l'IA et bien plus encore pour créer des solutions innovantes. Mes projets variés, tels que VueAR, Hichat et des outils de signature sécurisés, témoignent de ma capacité à relever des défis concrets avec des architectures modernes.
             </p>
             <div className="flex flex-wrap justify-center gap-2 mt-6">
               {technologies.slice(0, 8).map((tech, index) => (
